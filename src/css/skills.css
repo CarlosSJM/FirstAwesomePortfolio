@@ -1,0 +1,6 @@
+.skills{
+    /*height: 500em;*/
+    text-align: center;
+    /*display: flex*/;
+    display: inline-grid;
+}

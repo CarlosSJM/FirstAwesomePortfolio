@@ -1,0 +1,54 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white;
+  /*efecto slide*/
+  animation-duration        : 2.5s;
+  animation-fill-mode       : both;
+  animation-iteration-count : 1;
+  animation-name            : fastSlide;
+  animation-timing-function : linear;
+  transform-origin          : bottom; 
+}
+
+.App-intro {
+  font-size: large;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.footer{
+
+}
+/*efecto slide*/
+@keyframes fastSlide {
+  0%   { transform: translate(120%) skewX(-30deg) ; }
+  70%  { transform: translate(0%)   skewX(-30deg) ; }
+  80%  { transform: translate(0%)   skewX(20deg)  ; }
+  95%  { transform: translate(0%)   skewX(-10deg) ; }
+  100% { transform: translate(0%)   skewX(0deg)   ; }
+}
+
+
+
+/*de dereca izq lento web www.css3maker.com/css-gradient.html*/
+/* @keyframes fastSlide {
+  0%   { transform: translate(-350px) skewX(30deg) ; }
+  70%  { transform: translate(-200px)   skewX(-30deg) ; }
+  80%  { transform: translate(100px)   skewX(20deg)  ; }
+  95%  { transform: translate(200px)   skewX(-10deg) ; }
+  100% { transform: translate(0%)   skewX(0deg)   ; }
+} */

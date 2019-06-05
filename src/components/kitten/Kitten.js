@@ -32,6 +32,8 @@ const Label = posed.span({
 function Kitten() {
     return (
     <section className="contieneDrag">
+      <h1>UUUUIII! gatitos traviesos!</h1>
+      <h1>¿Podrias ayudarme a colocarlas?</h1>
     <Box className="box"> 
       <Label className="label">
       

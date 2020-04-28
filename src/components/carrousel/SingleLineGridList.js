@@ -8,6 +8,7 @@ import StarBorderIcon from '@material-ui/icons/StarBorder';
 
 const useStyles = makeStyles(theme => ({
   root: {
+    margin: 5,
     display: 'flex',
     flexWrap: 'wrap',
     justifyContent: 'space-around',
@@ -26,6 +27,9 @@ const useStyles = makeStyles(theme => ({
     background:
       'linear-gradient(to top, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.3) 70%, rgba(0,0,0,0) 100%)', 
   },
+  img:{
+    width: 100,
+  }
 }));
 
 /**
@@ -156,7 +160,9 @@ function SingleLineGridList() {
       <GridList className={classes.gridList} cols={2.5}>
         {tileData.map(tile => (
           <GridListTile key={tile.img}>
-            <img src={tile.img} alt={tile.title} />
+            <a href={tile.img}>
+              <img src={tile.img} alt={tile.title} />
+            </a>
             <GridListTileBar
               title={tile.title}
               classes={{
